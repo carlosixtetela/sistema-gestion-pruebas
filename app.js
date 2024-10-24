@@ -36,6 +36,7 @@ const projectRoutes = require('./routes/project.routes');
 const authRoutes = require('./routes/auth.routes');
 const testRoutes = require('./routes/test.routes');
 const defectRoutes = require('./routes/defect.routes');
+const reportRoutes = require('./routes/report.routes');
 
 // Usar las rutas
 app.use('/api/users', userRoutes);
@@ -43,3 +44,4 @@ app.use('/api/projects', projectRoutes);
 app.use('/api/auth', authRoutes);
 app.use('/api/tests', testRoutes);
 app.use('/api/defects', defectRoutes);
+app.use('/api/reports', reportRoutes);
